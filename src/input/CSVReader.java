@@ -1,4 +1,6 @@
 package input;
+import input.konstanty.Konstanty;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -11,10 +13,10 @@ public class CSVReader {
 
     public static void main(String[] args) {
 
-        String csvFile = "C:\\Users\\Matej\\IdeaProjects\\started_2017-04-20_CET_17_55.csv";
+        String csvFile = Konstanty.CESTA_K_CSV;
         BufferedReader br = null;
         String line = "";
-        String cvsSplitBy = ";";
+        String cvsSplitBy = Konstanty.DELIC_STLPCOV;
         int pocet_riadkov = 0;
 
         // stromy
